@@ -1,0 +1,153 @@
+ABHIJIT DASGUPTA | BAHUM103 | Ethics and Values | F1 | PRP322
+ABHIJIT DASGUPTA | BAHUM103 | Ethics and Values | F2 | PRP323
+ABHIJIT KR DARBEY | BAGER101 | German Level I | TCC1 | SJT324
+ABHIJIT KR DARBEY | BAGER101P | German Level I Lab | L59+L60 | PRP555
+ADAIKALAM ARULANANDAM | BAGER101 | German Level I | TCC1 | TT416
+ADAIKALAM ARULANANDAM | BAGER101P | German Level I Lab | L57+L58 | TT116
+ADIL AHMAD SHAH | BAHUM103 | Ethics and Values | F1 | PRP333
+ADIL AHMAD SHAH | BAHUM103 | Ethics and Values | G2 | TT334
+AMIT KUMAR SAINI | BAGER101 | German Level I | TCC1 | SJT607
+AMIT KUMAR SAINI | BAGER101P | German Level I Lab | L53+L54 | PRP555
+ANITHA E | BACSE302 | Machine Learning and Optimization | B1+TB1 | PRP330
+ANITHA E | BACSE302P | Machine Learning and Optimization Lab | L35+L36 | SJT418
+ANUSHA R | BACSE319 | Cryptography and Network Security | A1+TA1 | SJT707
+ANUSHA R | BACSE319 | Cryptography and Network Security | A2+TA2 | SJT712
+ANUSHA R | BACSE319P | Cryptography and Network Security Lab | L19+L20 | SJT217
+ANUSHA R | BACSE319P | Cryptography and Network Security Lab | L41+L42 | SJT217
+AQUIB PARVEZ | BAHUM103 | Ethics and Values | F1 | PRP319
+AQUIB PARVEZ | BAHUM103 | Ethics and Values | F2 | PRP320
+ARATI KUMARI | BAGER101 | German Level I | TAA2 | SJT302
+ARATI KUMARI | BAGER101 | German Level I | TBB2 | SJT124
+ARATI KUMARI | BAGER101P | German Level I Lab | L19+L20 | TT116
+ARATI KUMARI | BAGER101P | German Level I Lab | L7+L8 | PRP555
+BAISHALI CHOUDHURI | BAESP101 | Spanish Level I | TG2 | SJT115
+BAISHALI CHOUDHURI | BAESP101P | Spanish Level I Lab | L15+L16 | PRP555
+BALAMURUGAN J | BAHUM103 | Ethics and Values | F1 | SJT409
+BALAMURUGAN J | BAHUM103 | Ethics and Values | F2 | SJT408
+BANGALORE MORARJI | BAHUM103 | Ethics and Values | F1 | SMV320
+BANGALORE MORARJI | BAHUM103 | Ethics and Values | F2 | SMV220
+BHAVANI S | BACSE204 | Software Engineering | G1+TG1 | SJT709
+BHAVANI S | BACSE204P | Software Engineering Lab | L39+L40 | SJT121
+BHUVANESWARI M | BAHUM103 | Ethics and Values | F1 | PRP323
+BHUVANESWARI M | BAHUM103 | Ethics and Values | F2 | SJT102
+DHANANJAY KUMAR | BAGER101 | German Level I | TAA1 | SJT505
+DHANANJAY KUMAR | BAGER101P | German Level I Lab | L57+L58 | PRP555
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | MB211
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | MB212
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | MB213
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRPG32
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRPG33
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | TT201
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | MB211
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | MB212
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRPG32
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRPG33
+ETHNUS (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | TT201
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | MB214
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRP134
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRPG34
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SJT224
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | TT204
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | MB213
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | MB214
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRP134
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRPG34
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SJT224
+FACE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | TT204
+GAURAV SUSHANT | BAESP101 | Spanish Level I | TC2 | SJT522
+GAURAV SUSHANT | BAESP101P | Spanish Level I Lab | L3+L4 | PRP555
+JAYALAKSHMI K | BAHIN101 | Prathamik Hindi | D1+TD1 | TT334
+JENIFA G | BACSE205 | Fundamentals of Artificial Intelligence and Machine Learning | C1+TC1 | SJT715
+JENIFA G | BACSE205 | Fundamentals of Artificial Intelligence and Machine Learning | C2+TC2 | SJTG16
+JENIFA G | BACSE205P | Fundamentals of Artificial Intelligence and Machine Learning Lab | L37+L38 | SJT218
+JENIFA G | BACSE205P | Fundamentals of Artificial Intelligence and Machine Learning Lab | L5+L6 | SJT218
+KUBENDRAN A | BAHUM103 | Ethics and Values | F1 | TT333
+KUBENDRAN A | BAHUM103 | Ethics and Values | F2 | SJT101
+LAKSHMI S | BACSE305 | Foundations of Data Science | B2+TB2 | PRP332
+LAKSHMI S | BACSE305P | Foundations of Data Science Lab | L21+L22 | PRP354
+MOHD OWAIS KHAN | BAHUM103 | Ethics and Values | F1 | PRP318
+MOHD OWAIS KHAN | BAHUM103 | Ethics and Values | F2 | PRP330
+MULUGU S NEELOTPAL | BAHUM103 | Ethics and Values | F1 | TT305
+MULUGU S NEELOTPAL | BAHUM103 | Ethics and Values | F2 | TT621
+NAVIN KUMAR | BAHUM103 | Ethics and Values | F1 | TT334
+NAVIN KUMAR | BAHUM103 | Ethics and Values | G1 | TT416
+NILAVATHY K | BAHUM103 | Ethics and Values | F1 | TT201
+NILAVATHY K | BAHUM103 | Ethics and Values | F2 | PRP306
+NUPUR MANASI | BAESP101 | Spanish Level I | TAA1 | SJT124
+NUPUR MANASI | BAESP101 | Spanish Level I | TDD2 | SJT102
+NUPUR MANASI | BAESP101P | Spanish Level I Lab | L49+L50 | PRP555
+NUPUR MANASI | BAESP101P | Spanish Level I Lab | L7+L8 | TT318
+PARVATHI R | BACSE205 | Fundamentals of Artificial Intelligence and Machine Learning | C1+TC1 | SJT302
+PARVATHI R | BACSE205P | Fundamentals of Artificial Intelligence and Machine Learning Lab | L43+L44 | SJT218
+POONAM SHARMA | BAHUM103 | Ethics and Values | F1 | PRP304
+POONAM SHARMA | BAHUM103 | Ethics and Values | F2 | PRP304
+PRABHU J | BACSE204 | Software Engineering | G1+TG1 | SJT215
+PRABHU J | BACSE204 | Software Engineering | G2+TG2 | SJT224
+PRABHU J | BACSE204P | Software Engineering Lab | L3+L4 | SJT219
+PRABHU J | BACSE204P | Software Engineering Lab | L49+L50 | SJT219
+RAHUL SHUKLA | BAHUM103 | Ethics and Values | F1 | PRP230
+RAHUL SHUKLA | BAHUM103 | Ethics and Values | F2 | PRP318
+RAJAMEENAKSHI J | BAHUM103 | Ethics and Values | F1 | SMVG21
+RAMNATH REGHUNADHAN | BAHUM103 | Ethics and Values | F1 | PRP306
+RAMNATH REGHUNADHAN | BAHUM103 | Ethics and Values | G1 | TT204
+RASI R A | BAHUM103 | Ethics and Values | F2 | SMV214
+RIZWAN AHMAD | BAHUM103 | Ethics and Values | F1 | PRP330
+RIZWAN AHMAD | BAHUM103 | Ethics and Values | F2 | PRP214
+ROHIT MATHUR | BACSE324 | Embedded Systems Architecture | B1+TB1 | PRP224
+ROHIT MATHUR | BACSE324 | Embedded Systems Architecture | B2+TB2 | PRP224
+ROHIT MATHUR | BACSE324P | Embedded Systems Architecture Lab | L25+L26 | SJT621
+ROHIT MATHUR | BACSE324P | Embedded Systems Architecture Lab | L47+L48 | SJT621
+SABYASACHI MISHRA | BAESP101 | Spanish Level I | TD1 | SMV128
+SABYASACHI MISHRA | BAESP101 | Spanish Level I | TG2 | SMV109
+SABYASACHI MISHRA | BAESP101P | Spanish Level I Lab | L23+L24 | PRP555
+SABYASACHI MISHRA | BAESP101P | Spanish Level I Lab | L59+L60 | TT318
+SALMAN HAIDER | BAHUM103 | Ethics and Values | F1 | PRP414
+SALMAN HAIDER | BAHUM103 | Ethics and Values | F2 | PRP204
+SAVITHA N | BAHUM103 | Ethics and Values | F1 | PRP313
+SAVITHA N | BAHUM103 | Ethics and Values | F2 | PRP313
+SEKARAPANDIAN N | BACSE109 | Foundations of Quantum Mechanics and Technologies | B1+TB1 | PRP127
+SHAHID HAMID RAINA | BAHUM103 | Ethics and Values | F1 | PRP334
+SHAHID HAMID RAINA | BAHUM103 | Ethics and Values | F2 | PRP319
+SHANTHARAJAH S P | BACSE319 | Cryptography and Network Security | A1+TA1 | SJT302
+SHANTHARAJAH S P | BACSE319P | Cryptography and Network Security Lab | L53+L54 | SJT217
+SHILPI GUPTA | BAESP101 | Spanish Level I | TBB2 | SJT513
+SHILPI GUPTA | BAESP101 | Spanish Level I | TCC1 | SJT513
+SHILPI GUPTA | BAESP101P | Spanish Level I Lab | L1+L2 | TT318
+SHILPI GUPTA | BAESP101P | Spanish Level I Lab | L51+L52 | PRP555
+SIVAKUMAR S | BAHUM103 | Ethics and Values | F1 | TT621
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | CDMM103
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRP238
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SJT215
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SJT221
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SMV101
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | CDMM103
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRP238
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SJT215
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SJT221
+SIXPHRASE (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SMV101
+SREYA SEN | BAHUM103 | Ethics and Values | G2 | TT333
+SUBRAMANIYASWAMY V | BACSE301 | Exploratory Data Analysis | B1+TB1 | PRP411
+SUBRAMANIYASWAMY V | BACSE301P | Exploratory Data Analysis Lab | L31+L32 | PRP655
+SUDHEER C V | BAHUM103 | Ethics and Values | F1 | PRPG26
+SUDHEER C V | BAHUM103 | Ethics and Values | F2 | PRPG26
+SUDHEER C V | BAHUM226 | Indian Classical Music | B2+TB2 | SJT603
+SUJATHA R | BACSE204 | Software Engineering | G1+TG1 | SJT710
+SUJATHA R | BACSE204 | Software Engineering | G2+TG2 | SJT712
+SUJATHA R | BACSE204P | Software Engineering Lab | L29+L30 | SJT219
+SUJATHA R | BACSE204P | Software Engineering Lab | L33+L34 | SJT219
+SUMEETHA M | BAHUM103 | Ethics and Values | F1 | PRP339
+SUMEETHA M | BAHUM103 | Ethics and Values | F2 | PRP333
+SWETHA V | BACSE301 | Exploratory Data Analysis | B2+TB2 | PRP411
+SWETHA V | BACSE301P | Exploratory Data Analysis Lab | L27+L28 | PRP655
+TANU KUKREJA | BAHUM103 | Ethics and Values | F2 | PRP334
+TANU KUKREJA | BAHUM103 | Ethics and Values | G1 | SMV116
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | PRP238A
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SJT222
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SJT223
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E1+TE1 | SMV116
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | PRP238A
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SJT222
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SJT223
+TIME (APT) | BASTS102 | Qualitative and Quantitative Skills Practice II | E2+TE2 | SMV116
+TONY P JOSE | BAHUM103 | Ethics and Values | F1 | PRP332
+TONY P JOSE | BAHUM103 | Ethics and Values | F2 | PRP322

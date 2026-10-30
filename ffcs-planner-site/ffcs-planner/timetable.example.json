@@ -1,0 +1,15 @@
+{
+  "requirements": [
+    { "courseCode": "BACSE204" },
+    { "courseCode": "BACSE204P" },
+    { "courseCode": "BACSE319" },
+    { "courseCode": "BACSE319P" },
+    { "courseCode": "BAHUM103" }
+  ],
+  "constraints": {
+    "avoidDays": [],
+    "avoidWindows": [],
+    "preferredFaculty": ["ANUSHA R"],
+    "avoidedFaculty": []
+  }
+}
