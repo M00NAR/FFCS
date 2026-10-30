@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.solved.json
+.DS_Store
+Thumbs.db
