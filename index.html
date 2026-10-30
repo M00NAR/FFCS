@@ -207,7 +207,7 @@ th { font-size: 11.5px; color: var(--muted); font-weight: 600; text-transform: u
 <header class="top">
   <h1>FFCS Planner</h1>
   <span class="sub" id="dataStats">Loading catalog…</span>
-  <span class="local">● Running on this computer</span>
+  <span class="local">● Runs in your browser</span>
 </header>
 
 <div class="layout">
@@ -273,6 +273,7 @@ th { font-size: 11.5px; color: var(--muted); font-weight: 600; text-transform: u
   </main>
 </div>
 
+<script src="solver.js"></script>
 <script>
 'use strict';
 const DAYS = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
@@ -311,11 +312,16 @@ async function init() {
   loadState();
   let data;
   try {
-    const res = await fetch('/api/data');
-    data = await res.json();
+    const load = async (name) => {
+      const res = await fetch(`ffcs-planner/data/${name}`);
+      if (!res.ok) throw new Error(`${name}: ${res.status}`);
+      return res.json();
+    };
+    const [catalog, slots] = await Promise.all([load('catalog.json'), load('slots.json')]);
+    data = { catalog, slots };
   } catch (e) {
     $('dataStats').textContent = 'Could not load data';
-    $('result').innerHTML = `<div class="notice err">Couldn't reach the local server. Make sure <span class="mono">server.py</span> is still running, then reload.</div>`;
+    $('result').innerHTML = `<div class="notice err">Couldn't load the course data (${esc(e.message)}). Open the site through a web server — start-windows.bat locally, or your host online — not by double-clicking index.html.</div>`;
     return;
   }
   CATALOG = data.catalog; SLOTS = data.slots;
@@ -484,19 +490,18 @@ async function runSolve() {
     return;
   }
   $('msg').innerHTML = '<span style="display:inline-flex;gap:8px;align-items:center"><span class="spinner"></span>Solving…</span>';
-  let data;
+  // Let the spinner paint before the (synchronous) search runs.
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  if (seq !== solveSeq) return;
+  let result;
   try {
-    const res = await fetch('/api/solve', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(request) });
-    data = await res.json();
-    if (!res.ok) throw new Error(data.error || res.statusText);
+    result = FFCSSolver.runRequest(CATALOG, SLOTS, request);
   } catch (e) {
-    if (seq !== solveSeq) return;
     $('msg').textContent = '';
-    $('result').innerHTML = `<div class="notice err">The solver didn't answer: ${esc(e.message)}. Is <span class="mono">server.py</span> still running?</div>`;
+    $('result').innerHTML = `<div class="notice err">The solver failed: ${esc(e.message)}</div>`;
     return;
   }
-  if (seq !== solveSeq) return;
-  lastResult = data.result; lastRequest = request; activeArr = 0;
+  lastResult = result; lastRequest = request; activeArr = 0;
   renderResult();
 }
 

@@ -12,19 +12,36 @@ uses the next free one and prints the address. Press Ctrl+C in the window to sto
 
 Needs Python 3.9 or newer. Nothing to install, no internet needed.
 
+## Host it online
+
+The site is fully static: the solver runs in the browser, so any static host works.
+Upload (or point the host at) the repo root. It needs `index.html`, `solver.js`
+and `ffcs-planner/data/`.
+
+**GitHub Pages:** repo **Settings → Pages → Build and deployment**, set Source to
+*Deploy from a branch*, pick `main` and `/ (root)`, and save. The site appears at
+`https://<your-username>.github.io/FFCS/` after a minute or two.
+
+Opening `index.html` straight from disk (double-click) won't work, because browsers
+block it from reading the data files. Use a launcher or a host.
+
 ## What's inside
 
 | Path | What it is |
 |---|---|
-| `server.py` | tiny web server; runs `ffcs-planner/scripts/solve.py` unchanged |
-| `static/index.html` | the page |
-| `ffcs-planner/` | the Claude skill (catalog, teacher list, solver) — see its `SKILL.md` |
+| `index.html` | the page |
+| `solver.js` | the timetable solver, a browser port of `ffcs-planner/scripts/solve.py` |
+| `server.py` | tiny local web server for the files above |
+| `ffcs-planner/` | the Claude skill (catalog, teacher list, Python solver) — see its `SKILL.md` |
 | `start-windows.bat`, `start-mac-linux.sh` | launchers |
+
+If you change the solver, change `solve.py` and `solver.js` together. They are
+meant to give identical results.
 
 ## Privacy
 
-The server listens on 127.0.0.1 only, so other devices on your Wi-Fi can't
-open it. Your picks are saved in your browser's local storage on this computer.
+Everything runs in your browser: your picks never leave it and are saved in its
+local storage. The local server listens on 127.0.0.1 only.
 
 ## Embedded courses
 

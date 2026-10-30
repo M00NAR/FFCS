@@ -5,15 +5,15 @@
     python3 server.py --port 9000
     python3 server.py --no-browser
 
-Uses the unchanged solver in ffcs-planner/scripts/solve.py. Listens on
-127.0.0.1 only, so nothing outside this computer can reach it. No network
-calls, no dependencies beyond Python 3.9+.
+Serves index.html, solver.js and the skill's data files: the same static files
+you upload when hosting the site. The solver runs in the browser (solver.js, a
+port of ffcs-planner/scripts/solve.py). Listens on 127.0.0.1 only. No
+dependencies beyond Python 3.9+.
 """
 
 from __future__ import annotations
 
 import argparse
-import importlib.util
 import json
 import sys
 import threading
@@ -22,44 +22,16 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SKILL = ROOT / "ffcs-planner"
-INDEX = ROOT / "static" / "index.html"
-MAX_BODY = 200_000
+CATALOG = json.loads((ROOT / "ffcs-planner" / "data" / "catalog.json").read_text(encoding="utf-8"))
 
-# Load the skill's solver as a module so the website runs exactly the same code
-# as `python3 scripts/solve.py`.
-_spec = importlib.util.spec_from_file_location("ffcs_solve", SKILL / "scripts" / "solve.py")
-solver = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(solver)
-
-SLOTS = solver.load_json(solver.DATA / "slots.json")
-CATALOG = solver.load_json(solver.DATA / "catalog.json")
-DATA_BLOB = json.dumps({"catalog": CATALOG, "slots": SLOTS}).encode("utf-8")
-
-
-def run_request(request: dict) -> dict:
-    """Same steps as solve.py's main(), minus printing and writing a file."""
-    if not isinstance(request, dict) or not isinstance(request.get("requirements"), list):
-        raise ValueError('request needs a "requirements" array')
-
-    raw = request.get("constraints") or {}
-    constraints = {
-        "avoidDays": raw.get("avoidDays", []),
-        "avoidWindows": raw.get("avoidWindows", []),
-        "preferredFaculty": raw.get("preferredFaculty", []),
-        "avoidedFaculty": raw.get("avoidedFaculty", []),
-    }
-    constraints["avoidWindows"] = [
-        {"start": solver.to_minutes(w["start"]), "end": solver.to_minutes(w["end"])}
-        for w in constraints["avoidWindows"]
-    ]
-
-    groups, unsolved = solver.build_groups(
-        CATALOG, SLOTS, request["requirements"], constraints
-    )
-    result = solver.solve(groups, constraints, solver.DEFAULT_LIMIT, solver.DEFAULT_MAX_NODES)
-    result["unsolved"] = unsolved
-    return result
+# Only these files are served; nothing else in the folder is reachable.
+FILES = {
+    "/": ("index.html", "text/html; charset=utf-8"),
+    "/index.html": ("index.html", "text/html; charset=utf-8"),
+    "/solver.js": ("solver.js", "text/javascript; charset=utf-8"),
+    "/ffcs-planner/data/catalog.json": ("ffcs-planner/data/catalog.json", "application/json"),
+    "/ffcs-planner/data/slots.json": ("ffcs-planner/data/slots.json", "application/json"),
+}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -86,41 +58,12 @@ class Handler(BaseHTTPRequestHandler):
         self._send(status, json.dumps(payload).encode("utf-8"), "application/json")
 
     def do_GET(self) -> None:  # noqa: N802
-        path = self.path.split("?", 1)[0]
-        if path in ("/", "/index.html"):
-            self._send(200, INDEX.read_bytes(), "text/html; charset=utf-8")
-        elif path == "/api/data":
-            self._send(200, DATA_BLOB, "application/json")
-        else:
-            self._json(404, {"error": "not found"})
-
-    def do_POST(self) -> None:  # noqa: N802
-        if self.path.split("?", 1)[0] != "/api/solve":
+        target = FILES.get(self.path.split("?", 1)[0])
+        if target is None:
             self._json(404, {"error": "not found"})
             return
-
-        # Refuse cross-site posts from other pages open in the browser.
-        origin = self.headers.get("Origin")
-        if origin and origin.split("://", 1)[-1] != self.headers.get("Host", ""):
-            self._json(403, {"error": "bad origin"})
-            return
-
-        try:
-            length = int(self.headers.get("Content-Length") or 0)
-        except ValueError:
-            length = 0
-        if length <= 0 or length > MAX_BODY:
-            self._json(413 if length > MAX_BODY else 400, {"error": "bad body size"})
-            return
-
-        try:
-            request = json.loads(self.rfile.read(length).decode("utf-8"))
-            result = run_request(request)
-        except (ValueError, KeyError, TypeError, AttributeError) as error:
-            self._json(400, {"error": f"bad request: {error}"})
-            return
-
-        self._json(200, {"result": result})
+        name, content_type = target
+        self._send(200, (ROOT / name).read_bytes(), content_type)
 
     def log_message(self, fmt: str, *args) -> None:
         sys.stderr.write("  %s %s\n" % (self.command, self.path))
